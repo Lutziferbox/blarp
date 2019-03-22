@@ -36,14 +36,16 @@ defmodule Blarp.MixProject do
       {:phoenix, "~> 1.4.2"},
       {:phoenix_pubsub, "~> 1.1"},
       {:phoenix_ecto, "~> 4.0"},
+      {:phoenix_html, "~> 2.11"},
       {:phoenix_live_view, github: "phoenixframework/phoenix_live_view"},
+      {:plug_cowboy, "~> 2.0"},
       {:ecto_sql, "~> 3.0"},
       {:postgrex, ">= 0.0.0"},
-      {:phoenix_html, "~> 2.11"},
-      {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+
+      # dev and test dependencies
+      {:phoenix_live_reload, "~> 1.2", only: :dev}
     ]
   end
 

@@ -11,9 +11,13 @@
     <div>Steuern: 0</div>
     <div>Management Overhead: 0</div>
   </div>
+
+  <div class="steps">
+    <div>Schritte: <%=@steps%> </div>
+  </div>
 </div>
 
 <button>Generate Idea</button>
-<button>Attend <em>Business Angle Pitch</em></button>
+<button phx-click="pitch_angel_investors">Pitch <em>Angel Investors</em></button>
 <button>einstellen: Developer</button>
 <button>einstellen: DevOps</button>
