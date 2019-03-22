@@ -1,35 +1,19 @@
-<section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>A productive web framework that<br/>does not compromise speed or maintainability.</p>
-</section>
+<div class="state">
+  <div class="state-resources">
+    <div>Kontostand: <span>0 €</span></div>
+    <div>Marktwert: <span>0 €</span></div>
+    <div>Nerven: <span>100%</span></div>
+    <div>Ideas: <span>0</span></div>
+  </div>
 
-<section class="row">
-  <article class="column">
-    <h2>Resources</h2>
-    <ul>
-      <li>
-        <a href="https://hexdocs.pm/phoenix/overview.html">Guides &amp; Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix/blob/v1.4/CHANGELOG.md">v1.4 Changelog</a>
-      </li>
-    </ul>
-  </article>
-  <article class="column">
-    <h2>Help</h2>
-    <ul>
-      <li>
-        <a href="https://elixirforum.com/c/phoenix-forum">Forum</a>
-      </li>
-      <li>
-        <a href="https://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on Freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
-      </li>
-    </ul>
-  </article>
-</section>
+  <div class="state-modifiers">
+    <div>Marktwert: 0</div>
+    <div>Steuern: 0</div>
+    <div>Management Overhead: 0</div>
+  </div>
+</div>
+
+<button>Generate Idea</button>
+<button>Attend <em>Business Angle Pitch</em></button>
+<button>einstellen: Developer</button>
+<button>einstellen: DevOps</button>
