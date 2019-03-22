@@ -26,6 +26,7 @@ blarp-*.tar
 npm-debug.log
 
 # The directory NPM downloads your dependencies sources to.
+/node_modules
 /assets/node_modules/
 
 # Since we are building assets from assets/,
@@ -40,3 +41,15 @@ npm-debug.log
 # secrets files as long as you replace their contents by environment
 # variables.
 /config/*.secret.exs
+
+/db
+/tmp
+/installer/_build
+/installer/tmp
+/installer/doc
+/installer/deps
+
+*.beam
+.elixir_ls/
+.vscode
+.env
