@@ -52,7 +52,8 @@ config :blarp, BlarpWeb.Endpoint,
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
       ~r{lib/blarp_web/views/.*(ex)$},
-      ~r{lib/blarp_web/templates/.*(eex)$}
+      ~r{lib/blarp_web/templates/.*(eex)$},
+      ~r{lib/blarp_web/live/.*(ex)$}
     ]
   ]
 
