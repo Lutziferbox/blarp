@@ -1,4 +1,22 @@
 /* This file is for your main application css. */
 
 @import "./phoenix.css";
-@import "../../deps/phoenix_live_view/assets/css/live_view.css";
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.state {
+  overflow: hidden;
+  border: 1px black dashed;
+  padding: 10px;
+}
+
+.state .state-resources {
+  float: left;
+}
+
+.state .state-modifiers {
+  float: left;
+  margin-left: 50px;
+}
