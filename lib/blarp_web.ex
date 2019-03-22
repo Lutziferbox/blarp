@@ -23,6 +23,7 @@ defmodule BlarpWeb do
 
       import Plug.Conn
       import BlarpWeb.Gettext
+
       alias BlarpWeb.Router.Helpers, as: Routes
     end
   end
@@ -41,6 +42,8 @@ defmodule BlarpWeb do
 
       import BlarpWeb.ErrorHelpers
       import BlarpWeb.Gettext
+      import Phoenix.LiveView, only: [live_render: 2, live_render: 3]
+
       alias BlarpWeb.Router.Helpers, as: Routes
     end
   end
@@ -48,14 +51,17 @@ defmodule BlarpWeb do
   def router do
     quote do
       use Phoenix.Router
+
       import Plug.Conn
       import Phoenix.Controller
+      import Phoenix.LiveView.Router
     end
   end
 
   def channel do
     quote do
       use Phoenix.Channel
+
       import BlarpWeb.Gettext
     end
   end
